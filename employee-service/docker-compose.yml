@@ -1,0 +1,8 @@
+employee:
+ build: employee
+ ports:
+  - "8080"
+ links:
+  - mongodb
+mongodb:
+ image: mongo
